@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel='stylesheet' href="{{ url_for('static', filename='css/main.css')}}">
+    </head>
+    <body>
+        <div id='bodyDiv'>
+            <div id='leftDiv' class='left'>
+                <div id='userInfo'>
+                    <table>
+                        <tr>
+                            <td>{{ session['loginUserData'].USER_ID}} 님 안녕하세요!</td>
+                            <td id='logoutTd'>logout</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id=boardDiv>
+                    <legend style="background-color: burlywood;">게시판 목록</legend>
+                    <table id=boardTable>
+                        <colgroup>
+                            <col width=100%>
+                        </colgroup>
+                    </table>
+                </div>
+            </div>
+            <div id='rightDiv' class='right'>
+                <div id='postDiv'>
+                    <div id='writeDiv'>
+                        <h4>취미게시판</h4>
+                        <input type=button id='writeBtn' value="글쓰기">
+                        <input type="hidden" value=101>
+                    </div>
+                </br>
+                    <table>
+                        <colgroup>
+                            <col width=2%>
+                            <col width=2%>
+                            <col width=10%>
+                            <col width=3%>
+                            <col width=10%>
+                            <col width=10%>
+                        </colgroup>
+                        <tr style="background-color: aquamarine; text-align: center;" >
+                            <td>글번호</td>
+                            <td>조회수</td>
+                            <td>글제목</td>
+                            <td>작성자</td>
+                            <td>작성일</td>
+                            <td>수정일</td>
+                        </tr>
+                    </table>
+                    <table id=postTable>
+                        <colgroup>
+                            <col width=2%>
+                            <col width=2%>
+                            <col width=10%>
+                            <col width=3%>
+                            <col width=10%>
+                            <col width=10%>
+                        </colgroup>
+                        
+                    </table>
+                    <!-- {{data["post"]}} -->
+                </div>
+                <table id=pageTable></table>
+                <input type='text' id=pageText>
+                <input type='button' id=sendPage>
+            </div>
+        </div>
+        <script> let boardData = {{ data | tojson }} </script>
+        <script> let sessionVal = {{ session | tojson}} </script>
+        <script type="text/javascript" src="/static/js/main.js"></script>
+    </body>
+</html>

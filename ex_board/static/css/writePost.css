@@ -1,0 +1,9 @@
+
+
+#boardCommonContent{
+    width: 171px;
+    height: 200px;
+}
+#submitBtn td{
+    float: right;
+}

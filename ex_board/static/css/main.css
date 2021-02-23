@@ -1,0 +1,50 @@
+/* 로그인 페이지 css */
+#bodyDiv{
+    width: 100%;
+}
+#leftDiv{
+    /* display: inline-block; */
+    float: left;
+    border: 2px solid red;
+    width: 19%;
+    min-height: 50px;
+    /* margin-right : 5px; */
+}
+#rightDiv{
+    /* display: inline-block; */
+    float: right;
+    border: 2px solid blue;
+    width: 80%;
+    min-height: 50px;
+}
+#logoutTd{
+    color: blue;
+    font-weight: bold;
+}
+#logoutTd:hover{
+    background: silver;
+    cursor: pointer;
+}
+#postDiv tr {
+    background-color: rgb(216, 215, 215);
+    color: rgb(41, 40, 40);
+}
+#postDiv tr:hover{
+    background-color: yellow;    
+    cursor: pointer;
+}
+#boardTable{
+    width: 100%;
+}
+#boardDiv tr{
+    background-color: rgb(216, 215, 215);
+    color: rgb(41, 40, 40);
+}
+#boardDiv tr:hover{
+    background-color: yellow;    
+    cursor: pointer;
+}
+
+#postTable tr{
+    text-align: center;
+}

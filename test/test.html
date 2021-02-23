@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="button" value="fetch" onclick="fetch('html').then(function(response){
+            response.text().then(function(text){
+                alert(text);
+            })
+        })
+        ">
+    </body>
+</html>

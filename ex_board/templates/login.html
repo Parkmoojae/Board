@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <link rel='stylesheet' href="{{ url_for('static', filename='css/login.css')}}">
+    </head> 
+
+    <body>
+      <div class=div>
+      <div class='loginForm left'>
+          <input type="text" id='loginId'name='loginId' placeholder="아이디">
+          <input type="password" id='loginPw' name='loginPw' placeholder="비밀번호">
+      </div>
+      <div class='loginForm right'>
+        <input type='submit' id = "loginBtn" value="로그인">
+      </div>
+        <div class=signDiv>
+          <button type='button' id = 'signUpBtn'>회원가입</button>
+        </div>  
+      </div>
+      <script type="text/javascript" src="../static/js/login.js"></script>  
+    </body>
+</html>

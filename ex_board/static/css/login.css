@@ -1,0 +1,19 @@
+/* 로그인 페이지 css */
+.loginForm{
+    display: inline-block;
+}
+.signDiv{
+    display: inline-block;
+}
+.left{
+    width: 180px;
+}
+.right{
+    width: 60px;
+}
+.signDiv{
+    width: 70px;
+}
+.div{
+    width: 360px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf08">
+        <link rel='stylesheet' href="{{ url_for('static', filename='css/signUp.css')}}">
+    </head>
+
+    <body>
+            <legend>회원가입</legend>            
+            <table class='signTable'>
+                <tr>
+                    <td>ID</td>
+                    <td>
+                        <input type='text' id='userId' name='userId' placeholder="아이디 입력" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>비밀번호</td>
+                    <td>
+                        <input type='password' id='userPw' name='userPw' placeholder="비밀번호 입력" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>이메일</td>
+                    <td>
+                        <input type='text' id='userEmail' name='userEmail' placeholder="이메일 입력" required>@
+                        <select id='url'>
+                            <option>naver.com</option>
+                            <option>daum.com</option>
+                            <option>gmail.com</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>전화번호</td>
+                    <td>
+                        <input type='text' id='userPhone' name='userPhone' placeholder="전화번호 입력" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>성별</td>
+                    <td>
+                        <input type='radio' name=radioCheck1 id='sex_r1' value='male' checked>남성
+                        <input type='radio' name=radioCheck1 id='sex_r2' value='female'>여성
+                    </td>
+                </tr>
+                <tr>
+					<td>생일</td>
+					<td>
+                        <input type="date" id="userBirth" name="userBirth" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>주소</td>
+                    <td>
+                        <input type='text' id='userAdd' name='userAdd' placeholder="주소 입력" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type='submit' id=submitBtn value="제출">
+                    </td>
+                </tr>
+            </table>
+        <script type="text/javascript" src="../static/js/signUp.js"></script>
+    </body>
+</html>

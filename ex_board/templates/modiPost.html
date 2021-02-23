@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf08">
+        <link rel='stylesheet' href="{{ url_for('static', filename='css/modiPost.css')}}">
+    </head>
+
+    <body>
+            <legend>게시글 수정</legend>            
+            <table class='signTable'>
+                <tr>
+                    <td>제목</td>
+                    <td>
+                        <input type='text' id='boardCommonTitle' name='boardCommonTitle' placeholder="제목 입력" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>내용</td>
+                    <td>
+                        <textarea id='boardCommonContent' name='boardCommonContent'></textarea>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <input type='submit' id=submitBtn value="제출">
+                    </td>
+                </tr>
+            </table>
+        <script> let writeData = {{ data | tojson }} </script>
+        <script> let sessionVal = {{ session | tojson}} </script>
+        <script type="text/javascript" src="/static/js/modiPost.js"></script>
+    </body>
+</html>
